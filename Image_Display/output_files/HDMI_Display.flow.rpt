@@ -1,0 +1,182 @@
+Flow report for HDMI_Display
+Mon Feb 27 16:29:34 2023
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon Feb 27 16:29:30 2023       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; HDMI_Display                                ;
+; Top-level Entity Name              ; ov5640_hdmi                                 ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE10F17C8                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 3,228 / 10,320 ( 31 % )                     ;
+;     Total combinational functions  ; 2,585 / 10,320 ( 25 % )                     ;
+;     Dedicated logic registers      ; 1,925 / 10,320 ( 19 % )                     ;
+; Total registers                    ; 1941                                        ;
+; Total pins                         ; 72 / 180 ( 40 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 88,064 / 423,936 ( 21 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
+; Total PLLs                         ; 2 / 2 ( 100 % )                             ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/27/2023 16:28:36 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; HDMI_Display        ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                             ;
++-------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                     ; Value                                                                                                                 ; Default Value ; Entity Name ; Section Id       ;
++-------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID               ; 145665288123432.167748651606624                                                                                       ; --            ; --          ; --               ;
+; ENABLE_SIGNALTAP                    ; On                                                                                                                    ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                                                    ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_ip/MyPLL_inst.v                                                                                         ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_ip/MyPLL_bb.v                                                                                           ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_ip/MyPLL.ppf                                                                                            ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/ddio_ip/Myddio.bsf                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/ddio_ip/Myddio_inst.v                                                                                       ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/ddio_ip/Myddio_bb.v                                                                                         ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/ddio_ip/Myddio.inc                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/ddio_ip/Myddio.cmp                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/ddio_ip/Myddio.ppf                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_sdram/sdram_PLL_inst.v                                                                                  ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_sdram/sdram_PLL_bb.v                                                                                    ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_sdram/sdram_PLL.ppf                                                                                     ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/rdfifo/rdfifo_inst.v                                                                                        ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/rdfifo/rdfifo_bb.v                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/wrfifo/wrfifo_inst.v                                                                                        ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/wrfifo/wrfifo_bb.v                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_SD/pll_sd_inst.v                                                                                        ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_SD/pll_sd_bb.v                                                                                          ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/PLL_SD/pll_sd.ppf                                                                                           ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/fiif_sd/fifo_sd_inst.v                                                                                      ; --            ; --          ; --               ;
+; MISC_FILE                           ; myip_core/fiif_sd/fifo_sd_bb.v                                                                                        ; --            ; --          ; --               ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                                                                     ; --            ; --          ; --               ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                                                                     ; --            ; --          ; --               ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                                                                            ; --            ; --          ; --               ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                                                                            ; --            ; --          ; --               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                                                                ; --            ; ov5640_hdmi ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                                                                ; --            ; ov5640_hdmi ; Top              ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                                                                ; --            ; ov5640_hdmi ; Top              ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                                                   ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                                                 ; --            ; --          ; --               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                                                          ; --            ; --          ; --               ;
+; SLD_FILE                            ; db/stp2_auto_stripped.stp                                                                                             ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                                                                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=2048                                                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INCREMENTAL_ROUTING=1                                                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=2048                                                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                                              ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_PIPELINE=0                                                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_PIPELINE=0                                                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_COUNTER_PIPELINE=0                                                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=18                                                                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=18                                                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=18                                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_GAP_RECORD=1                                                                                    ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_MODE=TRANSITIONAL                                                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=98                                                                                          ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=19                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; TOP_LEVEL_ENTITY                    ; ov5640_hdmi                                                                                                           ; HDMI_Display  ; --          ; --               ;
+; USE_SIGNALTAP_FILE                  ; stp2.stp                                                                                                              ; --            ; --          ; --               ;
++-------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:36     ; 1.0                     ; 4948 MB             ; 00:01:06                           ;
+; Fitter                    ; 00:00:11     ; 1.3                     ; 6143 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4692 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.5                     ; 4900 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:53     ; --                      ; --                  ; 00:01:25                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; ZYH233           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; ZYH233           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; ZYH233           ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; ZYH233           ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off HDMI_Display -c HDMI_Display
+quartus_fit --read_settings_files=off --write_settings_files=off HDMI_Display -c HDMI_Display
+quartus_asm --read_settings_files=off --write_settings_files=off HDMI_Display -c HDMI_Display
+quartus_sta HDMI_Display -c HDMI_Display
+
+
+

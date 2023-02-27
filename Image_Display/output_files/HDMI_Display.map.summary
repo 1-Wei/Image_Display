@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Feb 27 16:29:13 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : HDMI_Display
+Top-level Entity Name : ov5640_hdmi
+Family : Cyclone IV E
+Total logic elements : 3,414
+    Total combinational functions : 2,577
+    Dedicated logic registers : 1,925
+Total registers : 1941
+Total pins : 72
+Total virtual pins : 0
+Total memory bits : 88,064
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 3

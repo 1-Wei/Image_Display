@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Feb 27 16:29:25 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : HDMI_Display
+Top-level Entity Name : ov5640_hdmi
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 3,228 / 10,320 ( 31 % )
+    Total combinational functions : 2,585 / 10,320 ( 25 % )
+    Dedicated logic registers : 1,925 / 10,320 ( 19 % )
+Total registers : 1941
+Total pins : 72 / 180 ( 40 % )
+Total virtual pins : 0
+Total memory bits : 88,064 / 423,936 ( 21 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 2 / 2 ( 100 % )

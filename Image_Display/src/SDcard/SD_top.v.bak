@@ -1,0 +1,19 @@
+module SD_top(
+	input clk_ref, 		 //时钟信号
+   input clk_ref_180deg, //时钟信号,与clk_ref相位相差180度
+   input rst_n,  			 //复位信号,低电平有效
+	
+	//fifo接口
+	input 	
+	
+	
+);
+
+
+fifo_sd u_fifo_sd(
+	
+);
+
+
+
+endmodule 

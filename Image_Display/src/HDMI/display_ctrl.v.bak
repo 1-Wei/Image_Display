@@ -1,0 +1,20 @@
+module display_ctrl(
+	input clk,
+	input rst_n,
+	input [10:0] pixel_xpos,
+	input [10:0] pixel_ypos,
+	
+	output reg [15:0] rd_data
+
+);
+
+always @(posedge clk or negedge rst_n)
+begin
+	if(!rst_n) rd_data<=16'b0;
+	else
+	begin
+		if(pixel_xpos >400) rd_data<=16'h07E0;
+	end
+end
+
+endmodule
